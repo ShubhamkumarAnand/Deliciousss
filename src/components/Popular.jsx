@@ -26,7 +26,6 @@ function Popular() {
       setPopular(data.recipes)
       console.log(data.recipes)
     }
-    
   }
 
   return (
