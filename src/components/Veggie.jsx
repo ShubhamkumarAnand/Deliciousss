@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import style from 'styled-components';
+import styled from 'styled-components';
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/splide.min.css'
 
@@ -56,11 +56,11 @@ function Veggie() {
   )
 }
 
-const Wrapper = style.div`
+const Wrapper = styled.div`
   margin: 4rem 0rem;
 `
 
-const Card = style.div`
+const Card = styled.div`
   min-height: 25rem;
   border-radius: 2rem;
   overflow: hidden;
@@ -93,7 +93,7 @@ const Card = style.div`
   }
 `
 
-const Gradient = style.div`
+const Gradient = styled.div`
   z-index: 3;
   position: absolute;
   width: 100%;

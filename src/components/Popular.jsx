@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import style from 'styled-components';
+import styled from 'styled-components';
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/splide.min.css'
 
@@ -16,7 +16,7 @@ function Popular() {
     const check = localStorage.getItem("popular");
 
     if (check) {
-       setPopular(JSON.parse(check))
+      setPopular(JSON.parse(check))
     } else {
       const api = await fetch(
         `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`
@@ -56,11 +56,11 @@ function Popular() {
   )
 }
 
-const Wrapper = style.div`
+const Wrapper = styled.div`
   margin: 4rem 0rem;
 `
 
-const Card = style.div`
+const Card = styled.div`
   min-height: 25rem;
   border-radius: 2rem;
   overflow: hidden;
@@ -93,7 +93,7 @@ const Card = style.div`
   }
 `
 
-const Gradient = style.div`
+const Gradient = styled.div`
   z-index: 3;
   position: absolute;
   width: 100%;
