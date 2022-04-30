@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { FaSearch } from 'react-icons/fa'
-import { useNavigate } from 'react-router-dom'
 
+// This component stores the search for the app
 function Search() {
 
   const [input, setInput] = useState("")
@@ -25,6 +26,7 @@ function Search() {
   )
 }
 
+// Styled Component
 const FormStyle = styled.form`
   margin: 0rem 20rem;
 

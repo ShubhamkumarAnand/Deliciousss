@@ -5,6 +5,7 @@ import styled from 'styled-components'
 function Searched() {
 
   const [searchedRecipes, setSearchedRecipes] = useState([])
+
   let params = useParams()
 
   const getSearched = async (name) => {
@@ -33,6 +34,7 @@ function Searched() {
   )
 }
 
+// Styled Component
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));

@@ -4,9 +4,17 @@ import styled from 'styled-components'
 
 
 function Recipes() {
+
+  // State for the component
   const [details, setDetails] = useState([])
+
+  // By default keep it to the instruction button on loading
   const [activeTab, setActiveTab] = useState('instructions')
+
+  // Storing current parameter
   let params = useParams()
+
+  // Fetching the data from the API
   const getRecipe = async () => {
     const api = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
     const detailData = await api.json()
@@ -52,6 +60,7 @@ function Recipes() {
   )
 }
 
+// Styled Component
 const DetailWrapper = styled.div`
   margin-top: 10rem;
   margin-bottom: 5rem;

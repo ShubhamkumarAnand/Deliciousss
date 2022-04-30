@@ -1,16 +1,22 @@
-import styled from 'styled-components'
-import { Link, useParams } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 function Cuisine() {
+
+  // Storing the state of the component
   const [cuisine, setCuisine] = useState([])
 
+  // storing the current parameters
   const params = useParams()
+
+  // only run this when the parameters changes in the app
   useEffect(() => {
     getCuisine(params.type)
   }, [params.type])
 
+  // API function to get the random data 
   const getCuisine = async (name) => {
     const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${name}`)
     const recipes = await data.json()
@@ -39,6 +45,7 @@ function Cuisine() {
   )
 }
 
+// Styled component for the component
 const Grid = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));

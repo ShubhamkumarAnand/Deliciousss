@@ -5,6 +5,9 @@ import Cuisine from './Cuisine'
 import Searched from './Searched'
 import Recipes from './Recipes'
 import { AnimatePresence } from 'framer-motion'
+
+// This page for the routing 
+
 function Pages() {
   const location = useLocation()
   return (

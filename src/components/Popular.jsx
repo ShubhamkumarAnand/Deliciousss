@@ -13,9 +13,11 @@ function Popular() {
     getPopular()
   }, [])
 
+  // The data from the API is being fetched 
   const getPopular = async () => {
     const check = localStorage.getItem("popular");
 
+    // Checking the caching of the data present in the local storage
     if (check) {
       setPopular(JSON.parse(check))
     } else {
@@ -59,6 +61,7 @@ function Popular() {
   )
 }
 
+// Styled Component
 const Wrapper = styled.div`
   margin: 4rem 0rem;
 `

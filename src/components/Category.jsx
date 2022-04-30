@@ -3,6 +3,8 @@ import { GiNoodles, GiChopsticks } from 'react-icons/gi'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
+// This page is for the Category navigation in the app
+
 function Category() {
   return (
     <List>
@@ -27,6 +29,7 @@ function Category() {
   )
 }
 
+// Styled Component
 const List = styled.div`
   display: flex;
   justify-content: center;
