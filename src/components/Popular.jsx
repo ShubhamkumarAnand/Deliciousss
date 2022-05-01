@@ -15,7 +15,7 @@ function Popular() {
 
   // The data from the API is being fetched 
   const getPopular = async () => {
-    const check = localStorage.getItem("popular");
+    const check = localStorage.setItem("popular", JSON.stringify(setPopular));
 
     // Checking the caching of the data present in the local storage
     if (check) {
