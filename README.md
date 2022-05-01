@@ -23,3 +23,5 @@ Output
 ## Instruction and Ingredients
 
 <img src="https://user-images.githubusercontent.com/56271682/166108982-a8f75b8f-4528-4c6a-b47b-fc8bc284a820.png" width="1000" height="600" >
+
+Verdict : Developed the site in React js with API
