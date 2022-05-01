@@ -4,6 +4,8 @@
 
 ## [Deliciousss Website](https://deliciousss-imsknand.netlify.app/)
 
+### NOTE : For Better Viewing Experience view it on 75% Zoom
+
 Output
 
 ## Home Page
